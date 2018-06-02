@@ -3,9 +3,9 @@
 ## Intorduction
 I will be analyzing survey data from the Consumer Financial Protection Bureau. The survey data was released in October 2017. The survey website can be found at the [Consumer Financial Protection Bureau's Financial Well-being survey website.](https://www.consumerfinance.gov/data-research/financial-well-being-survey-data/)
 
-After looking at and ready about the different survey items I decided to analyze the FS Score, which I'm call the financial stability score and have pared down the data from over 200 varaibles to a manageable 26. I'm using these 25 varabiles to discover if there are groups within the financial stablity score. If there are groups I will anser two more questions, what are they commonalitiles and are their FS Scores different. 
+After looking at and reading about the different survey items I decided to analyze the FS Score, which I'm call the financial stability score. I have also pared down the original data from over 200 variables to a manageable 26. I'm using these 25 variables to discover if there are groups within the financial stability score. If there are groups I will answer two more questions, what are they commonalities and are their FS Scores different. 
 
-The varaibles I'm using are:
+The variables I'm using are:
 * SWB_1, I am satisfied with my life 
 * SWB_2, I am optimistic about my future 
 * SWB_3, If I work hard today, I will be more successful in the future 
