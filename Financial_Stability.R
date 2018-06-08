@@ -204,3 +204,47 @@ ggplot(FS.Data, aes(x = FSscore, color = PPHHSIZE)) + geom_histogram(fill = "whi
 ggplot(FS.Data, aes(x = FSscore, color = PPREG9)) + geom_histogram(fill = "white") + ggtitle("Financial Stability Score by Census Division")
 ggplot(FS.Data, aes(x = FSscore, color = PAREDUC)) + geom_histogram(fill = "white") + ggtitle("Financial Stability Score by Highest Level of Education by People Who Raise Respondent")
 
+
+lapply(FS.Data, table)
+
+
+#I'm re-uploading the data to do a classification model to see where there are groups based on the 25 factors. 
+FS <- read.csv("NFWBS_PUF_2016_data_pared_down.csv", header = T)
+FS2 <- FS2[, -4]
+str(FS2)
+
+#I want to run a Kmean classification but I need to know what k to use. I'll run the elbow method and average silhouette method.
+
+library(factoextra)
+fviz_nbclust(FS2, kmeans, method = "wss")
+#The elbow method shows I should use k = 2
+
+fviz_nbclust(FS2, kmeans, method = "silhouette")+
+  labs(subtitle = "Silhouette method")
+#The averge silhouette method shows I should use k = 2. I will use k = 2 for the kmean
+
+
+#I will start by scaling the data to work on standardized scales
+FS2.scaled <- as.data.frame(lapply(FS2, scale))
+set.seed(2345)
+fs.cluster <- kmeans(FS2.scaled, 2)
+#looking at the sizes of each cluster
+fs.cluster$size
+#looking at the center of each cluster
+fs.cluster$centers
+
+#Now I will add the cluster and FSscore onto the dataset
+FS2$cluster <-fs.cluster$cluster
+FS2$FSscore <- FS$FSscore
+head(FS2)
+
+
+#doing some checking
+library(dplyr)
+fs.groups <- group_by(FS2, cluster)
+summarise(fs.groups, KIDS_NoChildren = mean(KIDS_NoChildren), SAVINGSRANGES = mean(SAVINGSRANGES))
+#I'm trying to understand the differences between the two groups before doing a t-test or anova. I'm wondering if I'm going to have to remove the no responses, negative numbers and some 99 or 98's from the data. If I do end up doing this I will rerun the above to see if anything changes. 
+
+
+
+
