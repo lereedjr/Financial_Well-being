@@ -1,9 +1,18 @@
 # Financial Well-being Survey Analysis
 
 ## Intorduction
-I will be analyzing survey data from the Consumer Financial Protection Bureau. The survey data was released in October 2017. The survey website can be found at the [Consumer Financial Protection Bureau's Financial Well-being survey website.](https://www.consumerfinance.gov/data-research/financial-well-being-survey-data/)
+I used the survey data from the Consumer Financial Protection Bureau on financial well-being. The survey data was released in October 2017 and can be found [the survey’s website]. (https://www.consumerfinance.gov/data-research/financial-well-being-survey-data/)
 
-After looking at and reading about the different survey items I decided to analyze the FS Score, which I'm call the financial stability score. I have also pared down the original data from over 200 variables to a manageable 26. I'm using these 25 variables to discover if there are groups within the financial stability score. If there are groups I will answer two more questions, what are they commonalities and are their FS Scores different. 
+The dataset consists of over 200 variables that are used to examine financial well-being and understand what factors influence financial well-being. The idea of financial well-being is derived from a sense of financial security and having a freedom of choice in the future and present. 
+
+## Inspiration 
+I choose to use this dataset for my practicum because I am interested in answering the following questions:
+1. Are there clusters within the data?
+2. Do these clusters have different financial stability scores?
+3. What makes these clusters different?
+
+## Data
+For this project I narrowed the data list down to 22 variables: 
 
 The variables I'm using are:
 * SWB_1, I am satisfied with my life 
@@ -28,5 +37,15 @@ The variables I'm using are:
 * PPMARIT, Marital Status
 * PPREG4, Census Region
 * PPREG9, Census Division
+
+I’m using the FSscore or financial stability score as my dependent variable  and the other 21 variables as my independent variables. I chose these variables to analyze to see how demographic information, life satisfaction, future optimism, and future success interact and impact the feeling of financial stability. There are many other very interesting variables to look at but there were my top pick. I’m keeping many of the demographic variables because the FSscore is designed to not be influenced by demographics, according the Consumer Financial Protection Bureau technical guide. 
+
+
+
+
+
+
+
+
 
 
