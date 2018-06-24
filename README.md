@@ -341,7 +341,9 @@ The ANOVA came back with the p-value of less than alpha so I rejected the null a
 Next I wanted to look at the clusters and FSscores specifically so created a boxplot of the FSscore for each cluster and looked at the means. 
 
 FSscore and Cluster boxplot
+![alt text](https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20and%20Cluster%20boxplot.png)
 
+## Conclusion
 
 
 
