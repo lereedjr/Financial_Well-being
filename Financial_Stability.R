@@ -1,6 +1,7 @@
 library(plyr)
 library(ggplot2)
 library(factoextra)
+library(dplyr)
 
 #I will load and look at the data
 setwd("/Users/MorganSwaney/Desktop/Practicum 1/GitHub/Financial_Well-being")
@@ -79,6 +80,9 @@ hist(FS$PPMARIT, col = "blue", main = "Marital status", labels = T)
 
 hist(FS$PPREG4, col = "blue", main = "Census region", labels = T)
 #The majority of respondents live in the south 
+
+#looking for correlations
+format(round(cor(FS[, c(1:3, 5:22)]), 2), nsmall = 2)
 
 #Adding lables to the varaibles
 FS.Data <- FS
@@ -282,6 +286,9 @@ fit <- aov(FS$FSscore ~ FS$Cluster)
 summary(fit)
 #P-value is less than alpha so I reject the null and assume the cluster FS Scores are not the same.
 
+#checking the plots of the ANOVA
+plot(fit)
+
 #Running Tukey HSD to determin which clusters are different 
 posthoc <- TukeyHSD(fit, conf.level = 0.95)
 posthoc
@@ -290,21 +297,10 @@ posthoc
 #2 and 5
 #6 and 8
 
+#Looking at FSscore distribution for each cluster
+ggplot(FS, aes(Cluster, FSscore, fill = FS$Cluster)) + geom_boxplot()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Comparing the mean FSscore for each cluster to the overall mean FSscore
+fs.groups <- group_by(FS, FS$Cluster)
+summarise(fs.groups, FSscore = format(round(mean(FSscore), 2), nsmall = 2))
+mean(FS$FSscore)
