@@ -1,7 +1,7 @@
 # Financial Well-being Survey Analysis
 
 ## Intorduction
-I used the survey data from the Consumer Financial Protection Bureau on financial well-being. The survey data was released in October 2017 and can be found [the survey’s website]. (https://www.consumerfinance.gov/data-research/financial-well-being-survey-data/)
+I used the survey data from the Consumer Financial Protection Bureau on financial well-being. The survey data was released in October 2017 and can be found [the survey’s website](https://www.consumerfinance.gov/data-research/financial-well-being-survey-data/)
 
 The dataset consists of over 200 variables that are used to examine financial well-being and understand what factors influence financial well-being. The idea of financial well-being is derived from a sense of financial security and having a freedom of choice in the future and present. 
 
