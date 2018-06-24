@@ -40,8 +40,10 @@ The variables I'm using are:
 
 I’m using the FSscore or financial stability score as my dependent variable  and the other 21 variables as my independent variables. I chose these variables to analyze to see how demographic information, life satisfaction, future optimism, and future success interact and impact the feeling of financial stability. There are many other very interesting variables to look at but there were my top pick. I’m keeping many of the demographic variables because the FSscore is designed to not be influenced by demographics, according the Consumer Financial Protection Bureau technical guide. 
 
+FSscore Distribution 
+![alt text](https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20DIstribution.png)
 
-
+## Analysis
 
 
 
