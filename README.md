@@ -344,13 +344,24 @@ FSscore and Cluster boxplot
 ![alt text](https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20and%20Cluster%20boxplot.png)
 
 FSscore Mean
-![alt text] ()
+![alt text] (https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20Means.png)
+
+Looking at the FSscore means I can see cluster 1, 3 and 7 all have means around 50. 5 and 2 have FSscore means around 55. Clusters 8 and 6 have means less close together at 41.85 and 44.25, and cluster 4 has a FSscore mean of 47.4. 
+
 ## Conclusion
+After completing the analysis I found there are 8 natural clusters in the data. Some of the clusters do have different financial stability score and some do not. Grouping the clusters based on if their FSscore are different I found the following:
 
+Clusters 6 and 8 
+* Have the lowest life satisfaction, future optimism, and future success scores
+* Don’t have kids
+* Work part-time or retired 
+* Have 2 members in the household 
 
+Cluster 2 and 5 
+* Have the largest amount in savings
+* Have a bachelor’s degree 
+* White, non-Hispanic 
+* Male 
+* Married 
 
-
-
-
-
-
+When I compare these characteristics with the FSscore, clusters 2 and 5 have the highest FSscore while clusters 6 and 8 have the lowest. Clusters 1, 3 and 7’s mean FSscore is the same as overall FSscore mean. 
