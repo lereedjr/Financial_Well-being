@@ -12,7 +12,7 @@ I choose to use this dataset for my practicum because I am interested in answeri
 3. Do these clusters have different financial stability scores? 
 
 ## Data
-After reading about the different varaibles I narrowed the list down to 23 variables: 
+After reading about the different varaibles I narrowed the list down to 22 variables: 
 * SWB_1, I am satisfied with my life 
 * SWB_2, I am optimistic about my future 
 * SWB_3, If I work hard today, I will be more successful in the future 
@@ -34,10 +34,9 @@ After reading about the different varaibles I narrowed the list down to 23 varia
 * PPINCIMP, Household Income
 * PPMARIT, Marital Status
 * PPREG4, Census Region
-* PPREG9, Census Division
 * FSscore, Financial stability score
 
-I’m using the FSscore as my dependent variable and the other 22 variables as independent variables. I chose these variables to analyze to see how demographic information, education levels, life satisfaction, future optimism, and ideas about future success interact and impact with financial stability. There are many other very interesting variables to look at but there were my top picks. I’m using many of the demographic variables because the FSscore is designed to not be influenced by demographics, according the [Consumer Financial Protection Bureau technical guide](https://www.consumerfinance.gov/data-research/research-reports/financial-well-being-technical-report/).
+I’m using the FSscore as my dependent variable and the other 21 variables as independent variables. I chose these variables to analyze to see how demographic information, education levels, life satisfaction, future optimism, and ideas about future success interact and impact with financial stability. There are many other very interesting variables to look at but there were my top picks. I’m using many of the demographic variables because the FSscore is designed to not be influenced by demographics, according the [Consumer Financial Protection Bureau technical guide](https://www.consumerfinance.gov/data-research/research-reports/financial-well-being-technical-report/).
 
 FSscore Distribution 
  ![alt text](https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20DIstribution.png)
