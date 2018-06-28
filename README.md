@@ -185,6 +185,7 @@ To begin the cluster analysis I removed the FSscore from the data since I don’
 * Male
 * Household size is 3
 * Household income is between $100,000 and $149,000 
+* Married
 * Live in the south 
 
 ##### Cluster 6 
