@@ -344,7 +344,7 @@ FSscore and Cluster boxplot
 ![alt text](https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20and%20Cluster%20boxplot.png)
 
 FSscore Mean
-![alt text] (https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20Means.png)
+![alt text](https://github.com/mcassimus1/Financial_Well-being/blob/master/FSscore%20Means.png)
 
 Looking at the FSscore means I can see cluster 1, 3 and 7 all have means around 50. 5 and 2 have FSscore means around 55. Clusters 8 and 6 have means less close together at 41.85 and 44.25, and cluster 4 has a FSscore mean of 47.4. 
 
